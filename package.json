@@ -1,0 +1,17 @@
+{
+  "name": "antifem-site",
+  "version": "1.0.0",
+  "description": "Site of Antifem movement",
+  "type": "module",
+  "author": "(Ivan Kozyrin <ipkozyrin@gmail.com>)",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
+  },
+  "dependencies": {
+    "vitepress": "^1.2.3",
+    "vitepress-sls-blog-tmpl": "*"
+  }
+}
