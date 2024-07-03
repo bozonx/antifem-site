@@ -1,0 +1,8 @@
+title: menu
+body: |
+  - text: Guide
+    items:
+      - text: Introduction
+        link: ''
+      - text: Economics
+        link: economics

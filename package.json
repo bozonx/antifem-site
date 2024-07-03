@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "vitepress dev src",
     "build": "vitepress build src",
-    "preview": "vitepress preview src"
+    "preview": "vitepress preview src",
+    "admin": "npx @staticcms/proxy-server"
   },
   "dependencies": {
     "vitepress": "^1.2.3",

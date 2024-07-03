@@ -1,4 +1,5 @@
 ---
+title: О нас
 editLink: false
 lastUpdated: false
 prev: false

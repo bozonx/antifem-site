@@ -2,9 +2,11 @@ import {
   LANG,
   base,
 } from "vitepress-sls-blog-tmpl/src/configs/siteLocalesBase/ru.js";
+import { parseLocaleMenu } from "vitepress-sls-blog-tmpl/src/helpers/parseLocaleMenu.js";
 import commonParams from "../commonParams";
 
 const DOC = `/${LANG}/${commonParams.docUrl}/`;
+const menuFilePath = "./menu/menu.ru.yaml";
 
 export default {
   ...base,
@@ -13,17 +15,7 @@ export default {
     "Движение синтетический антифеминизм направлено на уравнивание прав и привелегий мужчин и женищин, соответсвенно на борьбу с феминизмом как источником неравноправия",
   themeConfig: {
     ...base.themeConfig,
-    sidebar: {
-      [DOC]: [
-        {
-          text: "Гид по проекту",
-          items: [
-            { text: "Введение", link: DOC },
-            { text: "Экономика", link: DOC + "economics" },
-          ],
-        },
-      ],
-    },
+    siteTitle: "Движение Антифеминизм",
     nav: [
       { text: "Донат", link: `/${LANG}/${commonParams.donateUrl}` },
       { text: "Описание проекта", link: DOC },
@@ -31,7 +23,6 @@ export default {
       { text: "Мы в соц сетях", link: `/${LANG}/${commonParams.linksUrl}` },
       { text: "О нас", link: `/${LANG}/${commonParams.aboutUrl}` },
     ],
-    siteTitle: "Движение Антифеминизм",
     footer: {
       message: "Копирование разрешено только со ссылкой на источник",
       copyright: "Copyright © 2024-present Antifem movement",
@@ -39,6 +30,9 @@ export default {
     editLink: {
       pattern: commonParams.editLinkPattern,
       ...base.themeConfig.editLink,
+    },
+    sidebar: {
+      [DOC]: parseLocaleMenu(__filename, menuFilePath, DOC),
     },
   },
 };

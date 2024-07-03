@@ -1,4 +1,5 @@
 ---
+title: Поддержать проект
 editLink: false
 lastUpdated: false
 prev: false
