@@ -5,6 +5,8 @@ import ru from "./locales/ru";
 
 export default defineConfig({
   ...siteConfigBase,
+  title: en.title,
+  description: en.description,
   sitemap: {
     hostname: "https://antifem-move.org",
   },

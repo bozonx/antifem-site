@@ -11,8 +11,7 @@ const menuFilePath = "./menu/menu.en.yaml";
 export default {
   ...base,
   title: "Antifeminism movement",
-  description:
-    "The Eden Project is a network of anarchist communes built on a mixture of socialist and market economies",
+  description: "Antifeminism movement",
   themeConfig: {
     ...base.themeConfig,
     siteTitle: "Antifeminism movement",
