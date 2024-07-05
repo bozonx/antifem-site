@@ -20,13 +20,14 @@ i18n:
   default_locale: en
   enforce_required_non_default: false
 collections:
-  - name: i18n_content
+  - name: doc
     label: Docs
     i18n: true
     # i18n:
     #   structure: multiple_files
     folder: "src"
-    path: "doc/{{slug}}"
+    # path: "doc/{{slug}}"
+    slug: "doc-{{slug}}"
     create: true
     # filter:
     #   pattern: "^ec"
