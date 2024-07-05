@@ -8,9 +8,9 @@ site_url: https://antifem-move.org
 media_folder: src/public/media
 public_folder: /media
 locale: ru
-media_library:
-  max_file_size: 512000
-  folder_support: true
+# media_library:
+#   max_file_size: 512000
+#   folder_support: true
 slug:
   encoding: ascii
   clean_accents: true
@@ -27,9 +27,11 @@ collections:
     i18n: true
     # i18n:
     #   structure: multiple_files
+    # folder: "src"
     folder: "src"
-    path: "{{dirname}}/doc"
-    # path: "doc/{{slug}}"
+    # path: "{{dirname}}/doc"
+    path: "doc/{{slug}}"
+    # preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     # slug: "doc-{{slug}}"
     create: true
     # filter:
@@ -46,11 +48,11 @@ collections:
     #   # moving an existing entry will move the entire sub tree of the entry to the new location
     #   path: { widget: string, index_file: "index" }
     summary: "{{dirname}}/{{filename}} {{commit_date | date('yyyy-MM-dd')}} {{title}}"
-    sortable_fields:
-      fields: ["commit_date", "title", "commit_author"]
-      default:
-        field: commit_date
-        direction: Descending
+    # sortable_fields:
+    #   fields: ["commit_date", "title", "commit_author"]
+    #   default:
+    #     field: commit_date
+    #     direction: Descending
     fields:
       - label: "Title"
         name: "title"
@@ -66,24 +68,24 @@ collections:
         widget: "markdown"
         i18n: true
         show_raw: true
-  - name: sidebar
-    label: "Sidebar"
-    i18n:
-      structure: multiple_files
-    delete: false
-    extension: yaml
-    format: yaml
-    folder: "src/.vitepress/locales/menu"
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Body"
-        name: "body"
-        widget: "code"
-        default_language: yaml
-        i18n: true
-
+  # - name: sidebar
+  #   label: "Sidebar"
+  #   i18n:
+  #     structure: multiple_files
+  #   delete: false
+  #   extension: yaml
+  #   format: yaml
+  #   folder: "src/.vitepress/locales/menu"
+  #   fields:
+  #     - label: "Title"
+  #       name: "title"
+  #       widget: "string"
+  #     - label: "Body"
+  #       name: "body"
+  #       widget: "code"
+  #       default_language: yaml
+  #       i18n: true
+  #
   # - name: "ru-doc"
   #   label: "RU doc"
   #   folder: "src/ru/doc"

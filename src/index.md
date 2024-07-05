@@ -15,7 +15,7 @@ watchEffect(() => {
   if (inBrowser && window.location.pathname === '/') {
     const langToRedirect = resolveNavigatorLang(supportedLocales, navigator.language)
     
-    //window.location.replace('/' + langToRedirect + '/');
+    window.location.replace('/' + langToRedirect + '/');
   }
 })
 </script>
