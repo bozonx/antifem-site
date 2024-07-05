@@ -27,7 +27,7 @@ collections:
     #   structure: multiple_files
     folder: "src"
     # path: "doc"
-    path: "doc/{{slug}}"
+    # path: "doc/{{slug}}"
     # slug: "doc-{{slug}}"
     create: true
     # filter:
