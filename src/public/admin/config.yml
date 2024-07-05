@@ -26,15 +26,16 @@ collections:
     # i18n:
     #   structure: multiple_files
     folder: "src"
+    path: "doc"
     # path: "doc/{{slug}}"
-    slug: "doc-{{slug}}"
+    # slug: 'doc-{{slug}}'
     create: true
     # filter:
     #   pattern: "^ec"
     # filter:
     #   field: editLink
     #   value: "false"
-    summary: "{{dirname}} {{commit_date | date('yyyy-MM-dd')}} {{title}}"
+    summary: "{{dirname}}/{{filename}} {{commit_date | date('yyyy-MM-dd')}} {{title}}"
     sortable_fields:
       fields: ["commit_date", "title", "commit_author"]
       default:
