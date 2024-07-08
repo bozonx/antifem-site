@@ -1,5 +1,5 @@
 [build]
-  command = "yarn install && yarn build"
+  command = "yarn build"
   publish = "docs"
 [build.environment]
   NODE_VERSION = "18"

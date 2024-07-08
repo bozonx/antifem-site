@@ -9,5 +9,3 @@ outline: false
 ---
 
 # Поддержать проект
-
-sfdf

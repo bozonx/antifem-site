@@ -20,9 +20,6 @@ i18n:
   locales: [en, ru]
   default_locale: en
   enforce_required_non_default: false
-  # canonical_slug:
-  #   # key: defaultLocaleVersion # default: translationKey
-  #   value: "{{locale}}/{{slug}}" # default: {{slug}}
   # save_all_locales: false
 collections:
   - name: doc

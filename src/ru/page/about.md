@@ -9,11 +9,3 @@ outline: false
 ---
 
 # О нас
-
-## sfsdf
-
-ljlklj
-
-sdfsdf
-
-234

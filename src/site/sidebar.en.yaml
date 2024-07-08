@@ -1,9 +1,29 @@
 title: sidebar
 body: |
   doc:
-    - text: Guide
+    - text: "Antifem Movement"
       items:
-        - text: Introduction
-          link: ''
-        - text: Economics
-          link: economics
+        - text: "Introduction"
+          link: ""
+        - text: "What the antifeminism movement stands for"
+          link: "what-the-antifeminism-movement-stands-for"
+        - text: "The Truth about Modern Feminism"
+          link: "the-truth-about-modern-feminism"
+        - text: "How to Defeat Feminism"
+          link: "how-to-defeat-feminism"
+    - text: "Methods of combating feminism"
+      items:
+        - text: "Introduction"
+          link: "methods-of-combating-feminism"
+    - text: "The lies and manipulations of feminists"
+      items:
+        - text: "Introduction"
+          link: "the-lies-and-manipulations-of-feminists"
+    - text: "Feminism"
+      items:
+        - text: "Introduction"
+          link: "feminism-intro"
+    - text: "The history of the struggle against feminism"
+      items:
+        - text: "Introduction"
+          link: "the-history-of-the-struggle-against-feminism"
