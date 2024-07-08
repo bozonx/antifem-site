@@ -1,8 +1,8 @@
 ---
 title: Введение
+description: ""
 prev: false
 ---
-
 # Введение
 
 - [За что выступает движение антифеминизм](./what-the-antifeminism-movement-stands-for)
