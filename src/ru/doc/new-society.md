@@ -1,5 +1,6 @@
 ---
 title: society
+description: sdfsdf
 ---
 # Новое общество
 
