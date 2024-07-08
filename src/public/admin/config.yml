@@ -133,29 +133,29 @@ collections:
             modes: ["raw", "rich_text"]
             i18n: true
             show_raw: true
-      - name: links
-        label: Links
-        file: "src/{{locale}}/page/links.md"
-        preview_path: "{{locale}}/page/{{slug}}"
-        i18n: true
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-            preview: false
-            i18n: true
-          - label: "Description"
-            name: "description"
-            widget: "text"
-            required: false
-            preview: false
-            i18n: true
-          - label: "Body"
-            name: "body"
-            widget: "markdown"
-            modes: ["raw", "rich_text"]
-            i18n: true
-            show_raw: true
+      # - name: links
+      #   label: Links
+      #   file: "src/{{locale}}/page/links.md"
+      #   preview_path: "{{locale}}/page/{{slug}}"
+      #   i18n: true
+      #   fields:
+      #     - label: "Title"
+      #       name: "title"
+      #       widget: "string"
+      #       preview: false
+      #       i18n: true
+      #     - label: "Description"
+      #       name: "description"
+      #       widget: "text"
+      #       required: false
+      #       preview: false
+      #       i18n: true
+      #     - label: "Body"
+      #       name: "body"
+      #       widget: "markdown"
+      #       modes: ["raw", "rich_text"]
+      #       i18n: true
+      #       show_raw: true
       - name: index
         label: Index
         file: "src/{{locale}}/index.md"

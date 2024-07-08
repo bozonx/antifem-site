@@ -13,7 +13,7 @@ const PROPS = {
   // used in links
   donateUrl: "page/donate",
   aboutUrl: "page/about",
-  linksUrl: "page/links",
+  // linksUrl: "page/links",
   docUrl: "doc",
 };
 const ru = loadSiteLocale("ru", __filename, PROPS);
