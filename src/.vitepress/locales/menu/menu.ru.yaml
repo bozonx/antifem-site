@@ -1,8 +1,0 @@
-title: menu3
-body: |
-  - text: Гид по проекту
-    items:
-      - text: Введение
-        link: ''
-      - text: Экономика
-        link: economics

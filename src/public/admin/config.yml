@@ -28,7 +28,7 @@ collections:
     # i18n:
     #   structure: multiple_files
     folder: "src"
-    path: "{{dirname}}/doc"
+    # path: "{{dirname}}/doc"
     # path: "doc/{{slug}}"
     # slug: "doc-{{slug}}"
     create: true

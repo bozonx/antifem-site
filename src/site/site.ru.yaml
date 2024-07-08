@@ -1,0 +1,19 @@
+title: site
+body: |
+  title: "Движение Антифеминизм"
+  siteTitle: "Движение Антифеминизм"
+  description: "Движение синтетический антифеминизм направлено на уравнивание прав и привелегий мужчин и женищин, соответсвенно на борьбу с феминизмом как источником неравноправия"
+  footer:
+    message: "Копирование разрешено только со ссылкой на источник."
+    copyright: "${PROPS.footerCopyright}"
+  nav:
+    - text: "Донат"
+      link: "/${PROPS.lang}/${PROPS.donateUrl}"
+    - text: "Описание проекта"
+      link: "${PROPS.lang}/${PROPS.docUrl}"
+    - text: "Блог"
+      link: "${PROPS.blogUrl}"
+    - text: "Мы в соц сетях"
+      link: "/${PROPS.lang}/${PROPS.linksUrl}"
+    - text: "О нас"
+      link: "/${PROPS.lang}/${PROPS.aboutUrl}"

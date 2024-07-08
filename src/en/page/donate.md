@@ -1,9 +1,13 @@
 ---
+title: Поддержать проект
 editLink: false
 lastUpdated: false
 prev: false
 next: false
+outline: false
+description: Способы доната
 ---
 
-# Donate
+# Поддержать проект
 
+sfdf

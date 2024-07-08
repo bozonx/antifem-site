@@ -13,6 +13,7 @@
     "decap": "npx decap-server"
   },
   "dependencies": {
+    "@sveltia/cms": "^0.35.1",
     "vitepress": "^1.2.3",
     "vitepress-sls-blog-tmpl": "*"
   }

@@ -1,9 +1,16 @@
 ---
+title: О нас
+prev: false
+outline: false
+description: О нашем проекте
 editLink: false
 lastUpdated: false
-prev: false
 next: false
 ---
+# О нас
 
-# About us
+## sfsdf
 
+jhjghhjhj
+
+sdfsdf

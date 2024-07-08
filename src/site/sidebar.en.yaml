@@ -1,0 +1,9 @@
+title: sidebar
+body: |
+  doc:
+    - text: Guide
+      items:
+        - text: Introduction
+          link: ''
+        - text: Economics
+          link: economics

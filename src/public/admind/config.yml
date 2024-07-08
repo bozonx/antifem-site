@@ -27,17 +27,17 @@ collections:
     i18n: true
     # i18n:
     #   structure: multiple_files
-    # folder: "src"
     folder: "src"
+    # folder: "doc"
     # path: "{{dirname}}/doc"
-    path: "doc/{{slug}}"
+    # path: "doc/{{slug}}"
     # preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     # slug: "doc-{{slug}}"
     create: true
     # filter:
     #   pattern: "^index"
-    # filter:
-    #   pattern: "^doc\\-"
+    filter:
+      pattern: "^doc"
     # filter:
     #   field: editLink
     #   value: "false"

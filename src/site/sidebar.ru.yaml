@@ -1,0 +1,9 @@
+title: sidebar
+body: |
+  doc:
+    - text: Гид по проекту
+      items:
+        - text: Введение
+          link: ''
+        - text: Экономика
+          link: economics
