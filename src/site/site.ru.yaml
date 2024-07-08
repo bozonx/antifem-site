@@ -9,7 +9,7 @@ body: |
   nav:
     - text: "❤️ Донат"
       link: "/${PROPS.lang}/${PROPS.donateUrl}"
-    - text: "Описание проекта"
+    - text: "📖 Вики"
       link: "${PROPS.lang}/${PROPS.docUrl}"
     - text: "TG канал"
       link: "${PROPS.blogUrl}"

@@ -10,7 +10,7 @@ const PROPS = {
   blogUrl: "https://t.me/antifem_battle",
   footerCopyright: "Copyright © 2024-present Antifem movement.",
 
-  // for use in links
+  // used in links
   donateUrl: "page/donate",
   aboutUrl: "page/about",
   linksUrl: "page/links",

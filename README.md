@@ -25,3 +25,5 @@ Use node version: 18 or greater
   ```
 
   Go to `http://localhost:4173/`
+
+  Local admin panel is on `http://localhost:4173/admin/`
