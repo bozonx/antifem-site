@@ -1,13 +1,10 @@
 ---
-title: Наши аккаунты в соц сетях
-description: Где мы представлены в соц сетях
+title: We are on social media
+description: We are on social media
+outline: false
+prev: false
 editLink: false
 lastUpdated: false
-prev: false
 next: false
-outline: false
 ---
-
-# Наши аккаунты в соц сетях
-
-sdsdf
+# We are on social media

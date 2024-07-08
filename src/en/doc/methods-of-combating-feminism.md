@@ -1,6 +1,5 @@
 ---
-title: Введение в методы борьбы с феминизмом
-description: Введение в методы борьбы с феминизмом
+title: Introduction to methods of combating feminism
+description: Introduction to methods of combating feminism
 ---
-
-# Введение в методы борьбы с феминизмом
+# Introduction to methods of combating feminism

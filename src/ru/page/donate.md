@@ -1,11 +1,10 @@
 ---
 title: Поддержать проект
 description: Способы доната
+outline: false
+prev: false
 editLink: false
 lastUpdated: false
-prev: false
 next: false
-outline: false
 ---
-
 # Поддержать проект

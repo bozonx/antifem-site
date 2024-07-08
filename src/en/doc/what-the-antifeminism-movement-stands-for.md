@@ -1,6 +1,5 @@
 ---
-title: За что выступает движение антифеминизм
-description: За что выступает движение антифеминизм
+title: What the antifeminism movement stands for
+description: What the antifeminism movement stands for
 ---
-
-# За что выступает движение антифеминизм
+# What the antifeminism movement stands for

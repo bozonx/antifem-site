@@ -1,6 +1,5 @@
 ---
-title: Как победить феминизм
-description: Как победить феминизм
+title: How to Defeat Feminism
+description: How to Defeat Feminism
 ---
-
-# Как победить феминизм
+# How to Defeat Feminism

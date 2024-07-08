@@ -1,6 +1,5 @@
 ---
-title: Правда о современном феминизме
-description: Правда о современном феминизме
+title: The Truth about Modern Feminism
+description: The Truth about Modern Feminism
 ---
-
-# Правда о современном феминизме
+# The Truth about Modern Feminism

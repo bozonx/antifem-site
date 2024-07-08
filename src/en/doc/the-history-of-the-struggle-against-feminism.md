@@ -1,6 +1,5 @@
 ---
-title: История борьбы с феминизмом. Введениею. Введение.
-description: История борьбы с феминизмом. Введениею. Введение.
+title: The history of the struggle against feminism. Introduction.
+description: The history of the struggle against feminism. Introduction.
 ---
-
-# История борьбы с феминизмом. Введениею. Введение.
+# The history of the struggle against feminism. Introduction

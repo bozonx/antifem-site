@@ -1,6 +1,5 @@
 ---
-title: Ложь и манипуляции феминисток. Введение.
-description: Ложь и манипуляции феминисток. Введение.
+title: The lies and manipulations of feminists. Introduction.
+description: The lies and manipulations of feminists. Introduction.
 ---
-
-# Ложь и манипуляции феминисток. Введение.
+# The lies and manipulations of feminists. Introduction

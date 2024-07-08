@@ -1,6 +1,5 @@
 ---
-title: Введение в феминизм
-description: Введение в феминизм
+title: Introduction to feminism
+description: Introduction to feminism
 ---
-
-# Введение в феминизм
+# Introduction to feminism
