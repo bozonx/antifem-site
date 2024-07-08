@@ -6,7 +6,8 @@ const PROPS = {
   hostname: "https://antifem-move.org",
   repo: "https://github.com/bozonx/antifem-site",
   editLinkPattern: "https://github.com/bozonx/antifem-site/edit/main/src/:path",
-  blogUrl: "https://blog.antifem-move.org",
+
+  blogUrl: "https://t.me/antifem_battle",
   footerCopyright: "Copyright © 2024-present Antifem movement.",
 
   // for use in links

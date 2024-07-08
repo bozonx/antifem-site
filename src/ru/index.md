@@ -13,9 +13,10 @@ const hero = {
   name: "Антифеминизм",
   text: "text",
   tagline: "antifem",
-  // image:
-  //   src: /logo.png
-  //   alt: VitePress
+  image: {
+    src: "/img/site-big-logo.webp",
+    alt: "Antifem logo",
+  },
   actions: [
     {
       theme: "brand",
@@ -36,24 +37,21 @@ const hero = {
 }
 const features = [
   {
-    icon: "🛠️",
+    icon: "🤝",
     title: "Антифем это равноправие",
     details: "За что выступает движение антифеминизм",
     link: "/ru/doc/what-the-antifeminism-movement-stands-for",
     linkText: "Читать о",
   },
   {
+    icon: "📖",
     title: "Правда о современном феминизме",
     details: "описание",
     link: "/ru/doc/the-truth-about-modern-feminism",
     linkText: "Читать о",
   },
   {
-    // #icon:
-    // #  src: /cool-feature-icon.svg
-    // #  width
-    // #  height
-    // #  alt
+    icon: "⚔️",
     title: "Как победить феминизм",
     details: "описание",
     linkText: "Читать о",
