@@ -8,7 +8,7 @@ layout: home
 
 hero:
   name: Антифеминизм
-  text: Движение
+  text: "{{ $frontmatter.layout }}"
   tagline: Проект по созданию сети анархистких коммун сочетающие в себе как принципы социализма, так и рыночные
   # image:
   #   src: /logo.png
@@ -43,5 +43,3 @@ features:
     link: /ru/doc/work-rest-balance
     linkText: Читать о балансе труда и отдыха
 ---
-
-sdfsdf
