@@ -1,16 +1,17 @@
-# when using the default proxy server port
-local_backend: true
 backend:
-  name: git-gateway
+  name: github
+  repo: bozonx/antifem-site
+  use_graphql: true
+  site_domain: 5ab4c367-3592-4361-a4b8-ccd46514c967
 
-publish_mode: editorial_workflow
 site_url: https://antifem-move.org
 media_folder: src/public/media
 public_folder: /media
-locale: ru
-media_library:
-  max_file_size: 512000
-  folder_support: true
+# publish_mode: editorial_workflow
+# locale: ru
+# media_library:
+#   max_file_size: 512000
+#   folder_support: true
 slug:
   encoding: ascii
   clean_accents: true
@@ -19,102 +20,154 @@ i18n:
   locales: [en, ru]
   default_locale: en
   enforce_required_non_default: false
+  # canonical_slug:
+  #   # key: defaultLocaleVersion # default: translationKey
+  #   value: "{{locale}}/{{slug}}" # default: {{slug}}
+  # save_all_locales: false
 collections:
   - name: doc
     label: Docs
     label_singular: Doc
     description: All the docs
     i18n: true
-    # i18n:
-    #   structure: multiple_files
     folder: "src"
-    # path: "{{dirname}}/doc"
-    # path: "doc/{{slug}}"
-    # slug: "doc-{{slug}}"
+    path: "doc/{{slug}}"
+    preview_path: "{{locale}}/doc/{{slug}}"
     create: true
-    # filter:
-    #   pattern: "^index"
-    # filter:
-    #   pattern: "^doc\\-"
-    # filter:
-    #   field: editLink
-    #   value: "false"
-    # nested:
-    #   depth: 100 # max depth to show in the collection tree
-    #   summary: "{{title}}" # optional summary for a tree node, defaults to the inferred title field
-    #   # adding a path object allows editing the path of entries
-    #   # moving an existing entry will move the entire sub tree of the entry to the new location
-    #   path: { widget: string, index_file: "index" }
-    summary: "{{dirname}}/{{filename}} {{commit_date | date('yyyy-MM-dd')}} {{title}}"
-    sortable_fields:
-      fields: ["commit_date", "title", "commit_author"]
-      default:
-        field: commit_date
-        direction: Descending
+    summary: "{{title}} | {{commit_date}} | {{commit_author}} | {{filename}}.md"
+    sortable_fields: ["commit_date", "title", "commit_author"]
     fields:
       - label: "Title"
         name: "title"
         widget: "string"
+        preview: false
         i18n: true
       - label: "Description"
         name: "description"
         widget: "text"
         required: false
+        preview: false
         i18n: true
       - label: "Body"
         name: "body"
         widget: "markdown"
+        modes: ["raw", "rich_text"]
         i18n: true
         show_raw: true
-  - name: sidebar
-    label: "Sidebar"
-    i18n:
-      structure: multiple_files
-    delete: false
-    extension: yaml
-    format: yaml
-    folder: "src/.vitepress/locales/menu"
-    fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Body"
-        name: "body"
-        widget: "code"
-        default_language: yaml
+  - name: files
+    label: "Files"
+    i18n: true
+    files:
+      - name: sidebar
+        label: Sidebar translation
+        extension: yaml
+        format: yaml
+        file: "src/site/sidebar.{{locale}}.yaml"
         i18n: true
-
-  # - name: "ru-doc"
-  #   label: "RU doc"
-  #   folder: "src/ru/doc"
-  #   create: true
-  #   slug: "{{slug}}"
-  #   fields:
-  #     - label: "Title"
-  #       name: "title"
-  #       widget: "string"
-  #       i18n: true
-  #     - label: "Description"
-  #       name: "description"
-  #       widget: "string"
-  #       required: false
-  #       i18n: true
-  #     - label: "Body"
-  #       name: "body"
-  #       widget: "markdown"
-  #       show_raw: true
-  #       i18n: true
-  #     #- { label: "Featured Image", name: "thumbnail", widget: "image" }
-  # - name: menu
-  #   label: Menu
-  #   folder: src/.vitepress/locales/menu
-  #   create: false
-  #   delete: false
-  #   extension: yaml
-  #   format: yaml
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - label: Body
-  #       name: body
-  #       widget: code
+        fields:
+          - name: "title"
+            widget: "hidden"
+            default: Sidebar
+            i18n: duplicate
+          - label: "Body"
+            name: "body"
+            widget: "text"
+            # default_language: yaml
+            i18n: true
+      - name: site
+        label: Site translations
+        extension: yaml
+        format: yaml
+        file: "src/site/site.{{locale}}.yaml"
+        i18n: true
+        fields:
+          - name: "title"
+            widget: "hidden"
+            default: Sidebar
+            i18n: duplicate
+          - label: "Body"
+            name: "body"
+            widget: "text"
+            # default_language: yaml
+            i18n: true
+      - name: about
+        label: About
+        file: "src/{{locale}}/page/about.md"
+        preview_path: "{{locale}}/page/{{slug}}"
+        i18n: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            preview: false
+            i18n: true
+          - label: "Description"
+            name: "description"
+            widget: "text"
+            required: false
+            preview: false
+            i18n: true
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            modes: ["raw", "rich_text"]
+            i18n: true
+            show_raw: true
+      - name: donate
+        label: Donate
+        file: "src/{{locale}}/page/donate.md"
+        preview_path: "{{locale}}/page/{{slug}}"
+        i18n: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            preview: false
+            i18n: true
+          - label: "Description"
+            name: "description"
+            widget: "text"
+            required: false
+            preview: false
+            i18n: true
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            modes: ["raw", "rich_text"]
+            i18n: true
+            show_raw: true
+      - name: links
+        label: Links
+        file: "src/{{locale}}/page/links.md"
+        preview_path: "{{locale}}/page/{{slug}}"
+        i18n: true
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+            preview: false
+            i18n: true
+          - label: "Description"
+            name: "description"
+            widget: "text"
+            required: false
+            preview: false
+            i18n: true
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            modes: ["raw", "rich_text"]
+            i18n: true
+            show_raw: true
+      - name: index
+        label: Index
+        file: "src/{{locale}}/index.md"
+        preview_path: "{{locale}}"
+        i18n: true
+        fields:
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+            modes: ["raw", "rich_text"]
+            i18n: true
+            show_raw: true

@@ -1,5 +1,6 @@
 ---
-title: index
+title: Введение
+description: Введение в антифеминизм
 prev: false
 ---
 
