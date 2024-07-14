@@ -7,7 +7,10 @@ layout: page
 ---
 
 <script setup>
+import { useData } from "vitepress";
 import SiteHome from "vitepress-sls-blog-tmpl/src/SiteHome.vue";
+
+const { theme } = useData();
 
 const hero = {
   name: "Антифеминизм",
@@ -40,15 +43,15 @@ const features = [
     icon: "🤝",
     title: "Антифем это равноправие",
     details: "За что выступает движение антифеминизм",
-    link: "/ru/doc/what-the-antifeminism-movement-stands-for",
     linkText: "Читать о",
+    link: "/ru/doc/what-the-antifeminism-movement-stands-for",
   },
   {
     icon: "📖",
     title: "Правда о современном феминизме",
     details: "описание",
-    link: "/ru/doc/the-truth-about-modern-feminism",
     linkText: "Читать о",
+    link: "/ru/doc/the-truth-about-modern-feminism",
   },
   {
     icon: "⚔️",
@@ -61,5 +64,4 @@ const features = [
 </script>
 
 <SiteHome :hero="hero" :features="features">
-
 </SiteHome>

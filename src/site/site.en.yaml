@@ -1,8 +1,9 @@
 title: site
 body: |
   title: "Antifeminism movement"
-  siteTitle: "Antifem movement"
   description: "Antifeminism movement"
+
+  siteTitle: "Antifem movement"
   footer:
     message: "Copying is allowed only with a link to the source."
     copyright: "${PROPS.footerCopyright}"

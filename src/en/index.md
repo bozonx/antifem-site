@@ -40,15 +40,15 @@ const features = [
     icon: "🤝",
     title: "Антифем это равноправие",
     details: "За что выступает движение антифеминизм",
-    link: "/ru/doc/what-the-antifeminism-movement-stands-for",
     linkText: "Читать о",
+    link: "/ru/doc/what-the-antifeminism-movement-stands-for",
   },
   {
     icon: "📖",
     title: "The Truth about Modern Feminism",
     details: "описание",
-    link: "/ru/doc/the-truth-about-modern-feminism",
     linkText: "Читать о",
+    link: "/ru/doc/the-truth-about-modern-feminism",
   },
   {
     icon: "⚔️",
@@ -61,5 +61,4 @@ const features = [
 </script>
 
 <SiteHome :hero="hero" :features="features">
-
 </SiteHome>
