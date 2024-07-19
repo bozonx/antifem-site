@@ -105,9 +105,7 @@ collections:
           - label: "Body"
             name: "body"
             widget: "markdown"
-            modes: ["raw", "rich_text"]
             i18n: true
-            # show_raw: true
       - name: donate
         label: Donate
         file: "src/{{locale}}/page/donate.md"
