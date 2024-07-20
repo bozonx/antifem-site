@@ -1,5 +1,5 @@
-import siteConfigBase from "vitepress-sls-blog-tmpl/src/configs/siteConfigBase.js";
-import { loadSiteLocale } from "vitepress-sls-blog-tmpl/src/helpers/siteConfigHelper.js";
+import siteConfigBase from "vitepress-sls-blog-tmpl/siteConfigBase.js";
+import { loadSiteLocale } from "vitepress-sls-blog-tmpl/siteConfigHelper.js";
 
 const PROPS = {
   // required

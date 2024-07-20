@@ -8,7 +8,7 @@ layout: page
 
 <script setup>
 import { useData } from "vitepress";
-import SiteHome from "vitepress-sls-blog-tmpl/src/SiteHome.vue";
+import SiteHome from "vitepress-sls-blog-tmpl/SiteHome.vue";
 
 const { theme } = useData();
 

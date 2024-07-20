@@ -7,7 +7,7 @@ layout: page
 ---
 
 <script setup>
-import SiteHome from "vitepress-sls-blog-tmpl/src/SiteHome.vue";
+import SiteHome from "vitepress-sls-blog-tmpl/SiteHome.vue";
 
 const hero = {
   name: "Antifeminism",
