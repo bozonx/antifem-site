@@ -1,8 +1,4 @@
 ---
-editLink: false
-lastUpdated: false
-prev: false
-next: false
 layout: page
 ---
 
@@ -10,26 +6,26 @@ layout: page
 import { useData } from "vitepress";
 import SiteHome from "vitepress-sls-blog-tmpl/SiteHome.vue";
 
-const { theme } = useData();
+const { theme, localeIndex } = useData();
 
 const hero = {
   name: "Антифеминизм",
   text: "text",
   tagline: "antifem",
   image: {
-    src: "/img/site-big-logo.webp",
+    src: theme.value.mainHeroImg,
     alt: "Antifem logo",
   },
   actions: [
     {
       theme: "brand",
       text: "Описание проекта",
-      link: "/ru/doc/",
+      link: `/${localeIndex.value}/${theme.value.docUrl}/`,
     },
     {
       theme: "alt",
       text: "Поддержать проект",
-      link: "/ru/page/donate",
+      link: `/${localeIndex.value}/${theme.value.donateUrl}`,
     },
     {
       theme: "alt",
