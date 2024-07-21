@@ -5,6 +5,8 @@ body: |
       items:
         - text: "Введение"
           link: ""
+        - text: "О проекте"
+          link: "about"
         - text: "За что выступает движение антифеминизм"
           link: "what-the-antifeminism-movement-stands-for"
         - text: "Правда о современном феминизме"

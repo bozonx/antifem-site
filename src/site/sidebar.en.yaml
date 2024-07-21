@@ -5,6 +5,8 @@ body: |
       items:
         - text: "Introduction"
           link: ""
+        - text: "About the project"
+          link: "about"
         - text: "What the antifeminism movement stands for"
           link: "what-the-antifeminism-movement-stands-for"
         - text: "The Truth about Modern Feminism"

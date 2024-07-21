@@ -5,6 +5,7 @@ layout: page
 <script setup>
 import { useData } from "vitepress";
 import SiteHome from "vitepress-sls-blog-tmpl/SiteHome.vue";
+import { PROPS } from "../.vitepress/props.js";
 
 const { theme, localeIndex } = useData();
 
@@ -19,18 +20,18 @@ const hero = {
   actions: [
     {
       theme: "brand",
-      text: "Описание проекта",
-      link: `/${localeIndex.value}/${theme.value.docUrl}/`,
+      text: `📃 О проекте`,
+      link: `/${localeIndex.value}/doc/about`,
     },
     {
       theme: "alt",
-      text: "Поддержать проект",
-      link: `/${localeIndex.value}/${theme.value.donateUrl}`,
+      text: `🗞️ Новости, статьи, события`,
+      link: `${PROPS.blogUrl}/${localeIndex.value}/recent/1`,
     },
     {
       theme: "alt",
-      text: "Наш Telegram канал",
-      link: "https://t.me/antifem_battle",
+      text: `📢 Мы в соц сетях`,
+      link: `/${localeIndex.value}/${theme.value.linksUrl}`,
     },
   ],
 }
