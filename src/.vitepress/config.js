@@ -17,4 +17,23 @@ export default {
     ...configBase.themeConfig,
     logo: "/img/logo.svg",
   },
+  head: [
+    ...configBase.head,
+    // do not recognize telephone numbers on the page
+    ["meta", { name: "format-detection", content: "telephone=no" }],
+
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-0BTWBESXGF",
+      },
+    ],
+    [
+      "script",
+      {},
+      `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+       gtag('config', 'G-0BTWBESXGF');`,
+    ],
+  ],
 };
