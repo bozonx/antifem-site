@@ -6,7 +6,7 @@ description: ""
 
 Anti-feminism is a movement for equality in society, which can only be achieved by addressing the source of gender inequality - feminism.
 
-## Project Goals
+## Movement Goals
 
 - To achieve true gender equality
 - To tell the truth about feminism, which consists entirely of lies and manipulation.
@@ -27,4 +27,4 @@ Also need help in translating into English. The texts are written in Russian and
 
 Copying of any materials from this site or blog is allowed only with a link to the original.
 
-To contact the authors, find us on our [Telegram chat](https://t.me/antifem_battle_chat).
+To contact us, write to [Telegram feedback bot](https://t.me/antifem_battle_feedbackbot).
