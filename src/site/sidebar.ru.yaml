@@ -1,5 +1,5 @@
 title: sidebar
-body: |
+body: |-
   doc:
     - text: "Движение Антифем"
       items:
@@ -21,7 +21,7 @@ body: |
       items:
         - text: "Введение"
           link: "the-lies-and-manipulations-of-feminists"
-    - text: "Феминизм"
+    - text: "Феминизм и его история"
       items:
         - text: "Введение"
           link: "feminism-intro"
