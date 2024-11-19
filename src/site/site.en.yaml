@@ -9,7 +9,7 @@ body: |-
   nav:
     - text: "❤️ ${PROPS.t.donate}"
       link: "/${PROPS.lang}/${PROPS.theme.donateUrl}"
-    - text: "📖 ${PROPS.t.wiki}"
-      link: "${PROPS.lang}/${PROPS.theme.docUrl}"
+  #  - text: "📖 ${PROPS.t.wiki}"
+  #    link: "${PROPS.lang}/${PROPS.theme.docUrl}"
     - text: "📢 ${PROPS.t.socialMedia}"
       link: "/${PROPS.lang}/${PROPS.theme.linksUrl}"
