@@ -33,6 +33,5 @@ Use node version: 18 or greater
 ## Cloud flare
 
 ```
-npx wrangler dev
-npx wrangler deploy
+pnpm cf:deploy
 ```

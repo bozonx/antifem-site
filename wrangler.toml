@@ -1,13 +1,10 @@
-name = "antifem-site"
+name = 'antifem-main-site'
 main = "worker.js"
 compatibility_date = "2025-08-07"
 
 [assets]
-directory = "doc"
+directory = "docs"
 binding = "ASSETS"
-
-# Для публикации на *.workers.dev без настройки маршрутов в зоне
-workers_dev = true
 
 # Для привязки собственного домена вместо workers_dev укажите routes/zones, пример:
 # routes = [
