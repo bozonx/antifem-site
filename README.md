@@ -30,7 +30,7 @@ Use node version: 18 or greater
 
   Local admin panel is on `http://localhost:4173/admin/`
 
-## Cloud flare
+## Cloudflare
 
 ```
 pnpm cf:deploy

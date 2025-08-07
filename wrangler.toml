@@ -1,12 +1,11 @@
-name = 'antifem-main-site'
+name = 'antifem-site'
 main = "worker.js"
 compatibility_date = "2025-08-07"
+
+routes = [
+  { pattern = "antifem.org", custom_domain = true }
+]
 
 [assets]
 directory = "docs"
 binding = "ASSETS"
-
-# Для привязки собственного домена вместо workers_dev укажите routes/zones, пример:
-# routes = [
-#   { pattern = "example.com/*", zone_name = "example.com" }
-# ]
