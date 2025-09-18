@@ -7,7 +7,7 @@ body: |-
     message: "Copying is allowed only with a link to the source."
     copyright: "Copyright © 2024-present Antifem movement."
   nav:
-    - text: "❤️ $.t.donate}"
+    - text: "❤️ ${t.donate}"
       link: "/${lang}/${theme.donateUrl}"
   #  - text: "📖 Guide"
   #    link: "${lang}/${theme.docUrl}"
