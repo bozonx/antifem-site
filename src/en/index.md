@@ -5,7 +5,6 @@ layout: home
 <script setup>
 import { useData } from "vitepress";
 import SiteHome from "vitepress-sls-blog-tmpl/SiteHome.vue";
-import { PROPS } from "../.vitepress/props.js";
 
 const { theme, localeIndex } = useData();
 
@@ -26,7 +25,7 @@ const hero = {
 // {
 // theme: "alt",
 // text: `🗞️ News, articles, events`,
-// link: `${PROPS.blogUrl}/${localeIndex.value}/recent/1`,
+// link: `${theme.value.blogUrl}/${localeIndex.value}/recent/1`,
 // },
 // {
 // theme: "alt",
@@ -35,7 +34,7 @@ const hero = {
 // },
 // ],
 }
-// const features = [
+const features = [
 // {
 // icon: "🤝",
 // title: "Антифем это равноправие",
@@ -57,7 +56,7 @@ const hero = {
 // linkText: "Читать о",
 // link: "/ru/doc/how-to-defeat-feminism",
 // },
-// ]
+]
 </script>
 
 <SiteHome :hero="hero" :features="features">
