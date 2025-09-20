@@ -1,23 +1,15 @@
 import { defineConfig } from "vitepress";
-import siteConfigBase from "vitepress-sls-blog-tmpl/siteConfigBase.js";
+import { mergeSiteConfig } from "vitepress-sls-blog-tmpl/siteConfigBase.js";
 import { loadSiteLocale } from "vitepress-sls-blog-tmpl/siteConfigHelper.js";
-import { PROPS } from "./props.js";
+
+export const PER_PAGE = 20;
 
 export default async () => {
-  const ru = await loadSiteLocale("ru", __filename, PROPS);
-  const en = await loadSiteLocale("en", __filename, PROPS);
-  const configBase = siteConfigBase(PROPS, en);
-
-  return defineConfig({
-    ...configBase,
-
-    locales: {
-      ...configBase.locales,
-      en: { lang: "en-US", ...en },
-      ru: { lang: "ru-RU", ...ru },
-    },
+  const config = defineConfig({
+    hostname: "https://antifem.org",
     themeConfig: {
-      ...configBase.themeConfig,
+      repo: "https://github.com/bozonx/antifem-site",
+      blogUrl: "https://blog.antifem.org",
       logo: "/img/logo.svg",
     },
     head: [
@@ -39,5 +31,13 @@ export default async () => {
        gtag('config', 'G-FLELNEC80R');`,
       ],
     ],
+  });
+
+  const ru = await loadSiteLocale("ru", __filename, config);
+  const en = await loadSiteLocale("en", __filename, config);
+
+  return mergeSiteConfig({
+    ...config,
+    locales: { en, ru },
   });
 };
