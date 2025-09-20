@@ -10,13 +10,13 @@ import { PROPS } from "../.vitepress/props.js";
 const { theme, localeIndex } = useData();
 
 const hero = {
-name: "Движение Антифеминизм",
-text: "Мы боремся за истинное гендерное равноправие",
-tagline: "Чтобы мужчины имели не меньше прав чем женщины нужно устранить источник неравноправия - феминизм",
-image: {
-src: theme.value.mainHeroImg,
-alt: "Antifem logo",
-},
+  name: "Движение Антифеминизм",
+  text: "Мы боремся за истинное гендерное равноправие",
+  tagline: "Чтобы мужчины имели не меньше прав чем женщины нужно устранить источник неравноправия - феминизм",
+  image: {
+    src: theme.value.mainHeroImg,
+    alt: "Antifem logo",
+  },
 // actions: [
 // {
 // theme: "brand",
