@@ -5,5 +5,4 @@ Disallow: /*utm_
 Disallow: /*?m=1
 Allow: /
 
-Sitemap: https://antifem-move.org/sitemap.xml
-
+Sitemap: https://antifem.org/sitemap.xml
