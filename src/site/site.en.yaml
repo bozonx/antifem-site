@@ -9,8 +9,8 @@ body: |-
     copyright: "Copyright © 2024-present Antifem movement."
   nav:
     - text: "❤️ ${t.donate}"
-      link: "/${localeIndex}/${theme.donateUrl}"
+      link: "/${localeIndex}/page/donate"
   #  - text: "📖 Guide"
-  #    link: "${localeIndex}/${theme.docUrl}"
+  #    link: "${localeIndex}/doc"
     - text: "📢 ${t.socialMedia}"
-      link: "/${localeIndex}/${theme.linksUrl}"
+      link: "/${localeIndex}/page/links"

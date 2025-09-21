@@ -29,7 +29,7 @@ const hero = {
 // {
 // theme: "alt",
 // text: `📢 Мы в соц сетях`,
-// link: `/${localeIndex.value}/${theme.value.linksUrl}`,
+// link: `/${localeIndex.value}/page/links`,
 // },
 // ],
 }
