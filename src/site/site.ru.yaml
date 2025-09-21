@@ -4,6 +4,10 @@ body: |-
   title: "Движение Антифеминизм"
   description: "Антифеминизм это движение за равноправие в обществе, достигнуть которое можно только устранив источник  гендерного неравенства - феминизм."
   siteTitle: "Движение Антифем"
+  publisher:
+    name: "Движение Антифеминизм"
+    url: "${config.hostname}/${localeIndex}"
+    logo: "${config.hostname}/img/home-logo.webp"
   footer:
     message: "Копирование разрешено только со ссылкой на источник."
     copyright: "Copyright © 2024-present Antifem movement."
