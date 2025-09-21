@@ -13,7 +13,6 @@ const hero = {
   text: "We are fighting for true gender equality",
   tagline: "In order for men to have no less rights than women, it is necessary to eliminate the source of inequality - feminism",
   image: {
-    src: theme.value.mainHeroImg,
     alt: "Antifem logo",
   },
 // actions: [
