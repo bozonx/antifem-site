@@ -1,11 +1,11 @@
+import path from "path";
 import { defineConfig } from "vitepress";
 import { mergeSiteConfig } from "vitepress-sls-blog-tmpl/siteConfigBase.js";
 import { loadSiteLocale } from "vitepress-sls-blog-tmpl/siteConfigHelper.js";
 
-export const PER_PAGE = 20;
-
 export default async () => {
   const config = defineConfig({
+    srcDir: path.resolve(__dirname, "../"),
     hostname: "https://antifem.org",
     themeConfig: {
       repo: "https://github.com/bozonx/antifem-site",
@@ -35,8 +35,8 @@ export default async () => {
   return mergeSiteConfig({
     ...config,
     locales: {
-      en: await loadSiteLocale("en", __filename, config),
-      ru: await loadSiteLocale("ru", __filename, config),
+      en: await loadSiteLocale("en", config),
+      ru: await loadSiteLocale("ru", config),
     },
   });
 };
