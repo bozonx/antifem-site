@@ -6,8 +6,8 @@ body: |-
   siteTitle: "Antifem movement"
   publisher:
     name: "Antifeminist movement"
-    url: "${config.hostname}/${localeIndex}"
-    logo: "${config.hostname}/img/home-logo.webp"
+    url: "${config.siteUrl}/${localeIndex}"
+    logo: "${config.siteUrl}/img/home-logo.webp"
   footer:
     message: "Copying is allowed only with a link to the source."
     copyright: "Copyright © 2024-present Antifem movement."

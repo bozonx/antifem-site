@@ -1,4 +1,4 @@
-import path from "path";
+import path from "node:path";
 import { defineConfig } from "vitepress";
 import { mergeSiteConfig } from "vitepress-sls-blog-tmpl/siteConfigBase.js";
 import { loadSiteLocale } from "vitepress-sls-blog-tmpl/siteConfigHelper.js";
@@ -6,11 +6,13 @@ import { loadSiteLocale } from "vitepress-sls-blog-tmpl/siteConfigHelper.js";
 export default async () => {
   const config = defineConfig({
     srcDir: path.resolve(__dirname, "../"),
-    hostname: "https://antifem.org",
+    siteUrl: "https://antifem.org",
+    repo: "https://github.com/bozonx/antifem-site",
     themeConfig: {
-      repo: "https://github.com/bozonx/antifem-site",
-      blogUrl: "https://blog.antifem.org",
       logo: "/img/logo.svg",
+
+      // specific for this site
+      blogUrl: "https://blog.antifem.org",
     },
     head: [
       // do not recognize telephone numbers on the page
