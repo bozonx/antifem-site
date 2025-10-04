@@ -13,6 +13,8 @@ export default async () => {
 
       // specific for this site
       blogUrl: "https://blog.antifem.org",
+
+      search: { provider: "pagefind" },
     },
     head: [
       // do not recognize telephone numbers on the page
@@ -31,6 +33,10 @@ export default async () => {
         `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
        gtag('config', 'G-FLELNEC80R');`,
       ],
+
+      // pagefind
+      ["link", { rel: "stylesheet", href: "/pagefind/pagefind-ui.css" }],
+      ["script", { src: "/pagefind/pagefind-ui.js" }],
     ],
   });
 
